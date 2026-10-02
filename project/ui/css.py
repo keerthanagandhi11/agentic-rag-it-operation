@@ -958,26 +958,10 @@ custom_css = """
         box-shadow: none !important;
     }
 
-    #chat-input-row {
-        display: flex !important;
-        align-items: flex-end !important;
-        gap: 12px !important;
-        margin-top: 12px !important;
-        width: 100% !important;
-    }
-
-    #chat-input-row > :first-child {
-        flex: 1 1 auto !important;
-        min-width: 0 !important;
-    }
-
     #chat-message-input {
-        flex: 1 1 auto !important;
         border: 1px solid #303b4c !important;
         border-radius: 16px !important;
         padding: 8px 10px !important;
-        min-height: 54px !important;
-        background: #151e2a !important;
     }
 
     #chat-message-input textarea {
@@ -990,38 +974,11 @@ custom_css = """
         color: #e5ebf5 !important;
         box-shadow: none !important;
         font-size: 0.92rem !important;
-        resize: vertical !important;
     }
 
     #chat-message-input textarea::placeholder {
         color: #6f7e93 !important;
         opacity: 1 !important;
-    }
-
-    #chat-submit-button {
-        flex: 0 0 auto !important;
-        min-width: 120px !important;
-        height: 54px !important;
-        padding: 0 20px !important;
-        border: 0 !important;
-        border-radius: 14px !important;
-        background: linear-gradient(180deg, #5d9bff 0%, #3e79f6 100%) !important;
-        color: #f8fbff !important;
-        font-size: 0.92rem !important;
-        font-weight: 700 !important;
-        letter-spacing: 0.01em !important;
-        box-shadow: 0 12px 22px rgba(61, 112, 255, 0.28) !important;
-        transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease !important;
-    }
-
-    #chat-submit-button:hover {
-        transform: translateY(-1px) !important;
-        filter: brightness(1.06) !important;
-        box-shadow: 0 14px 24px rgba(61, 112, 255, 0.34) !important;
-    }
-
-    #chat-submit-button:active {
-        transform: translateY(0) !important;
     }
 
     #chat-card .submit-button,

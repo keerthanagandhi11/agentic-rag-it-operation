@@ -162,15 +162,14 @@ def create_gradio_ui():
                 )
                 chatbot.clear(clear_chat_handler)
 
-                with gr.Row(elem_id="chat-input-row"):
-                    textbox = gr.Textbox(
-                        placeholder="Ask a question about your documents...",
-                        lines=2,
-                        max_lines=5,
-                        show_label=False,
-                        elem_id="chat-message-input",
-                    )
-                    submit_btn = gr.Button("Send", variant="primary", min_width=120, elem_id="chat-submit-button")
+                textbox = gr.Textbox(
+                    placeholder="Ask a question about your documents...",
+                    lines=2,
+                    max_lines=5,
+                    show_label=False,
+                    elem_id="chat-message-input",
+                )
+                submit_btn = gr.Button("Send", variant="primary", min_width=80, elem_id="chat-submit-button")
 
                 def chat_handler(msg, hist):
                     if not msg or not str(msg).strip():
