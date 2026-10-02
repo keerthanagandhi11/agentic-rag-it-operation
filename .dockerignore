@@ -1,0 +1,16 @@
+.git
+.venv
+venv
+.vscode
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.DS_Store
+**/.DS_Store
+.env
+**/.env
+docs/
+markdown_docs/
+parent_store/
+qdrant_db/
+notebooks/
